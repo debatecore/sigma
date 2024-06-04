@@ -25,7 +25,7 @@ const DashboardTopPanel = () => {
 
   return (
     <>
-      <div className="px-4 py-2 flex flex-row items-center bg-neutral-900 border-b border-neutral-700">
+      <div className="px-6 py-4 flex flex-row items-center bg-neutral-900 border-b border-neutral-700">
         <div>
           <p className="text-2xl font-semibold">{`${tournamentAbbreviation} - ${tournamentName}`}</p>
           <p className="text-sm text-neutral-500 italic">
@@ -155,11 +155,11 @@ const DashboardSidebar = () => {
             {category.items.map((item) => {
               return (
                 <Link
-                  href={item.href}
+                  href={!item.disabled ? item.href : ""}
                   key={item.title}
                   aria-disabled={item.disabled}
                   className={`flex flex-row gap-2 p-2 pr-4 rounded group hover:bg-neutral-950 ${
-                    item.disabled && "opacity-[.5]"
+                    item.disabled && "opacity-[.5] cursor-not-allowed"
                   }`}
                 >
                   <span className="text-neutral-500 group-hover:text-white scale-[.9]">
