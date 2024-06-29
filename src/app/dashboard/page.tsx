@@ -1,14 +1,11 @@
 /** @format */
-"use client";
 
 import { Dashboard } from "@/components/Dashboard";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { toast } from "sonner";
 
 const RecentActivity = () => {
   return (
-    <div className="ml-auto border-l border-neutral-700 w-[30%] bg-neutral-950 h-full">
+    <div className="ml-auto border-l border-neutral-700 w-[30%] h-full">
       <div className="flex flex-row items-center p-4 gap-3">
         <div className="w-2 h-2 bg-emerald-400 rounded-full">
           <div className="w-2 h-2 bg-emerald-400 rounded-full animate-ping" />
@@ -21,7 +18,7 @@ const RecentActivity = () => {
           {"View all"}
         </Link>
       </div>
-      <hr className="border-neutral-600 mx-4" />
+      <hr className="border-neutral-700 mx-4" />
     </div>
   );
 };
@@ -30,7 +27,7 @@ export default function PageDashboard() {
   return (
     <>
       <Dashboard>
-        <div className="flex-1 flex flex-row">
+        <div className="flex-1 h-full flex flex-row">
           <div className="p-4">
             <p>Overview</p>
           </div>
