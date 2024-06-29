@@ -1,7 +1,10 @@
 /** @format */
+"use client";
 
 import { Dashboard } from "@/components/Dashboard";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { toast } from "sonner";
 
 const RecentActivity = () => {
   return (

@@ -3,6 +3,7 @@
 import {
   BetweenHorizonalStartIcon,
   CastleIcon,
+  CherryIcon,
   FileClockIcon,
   FileImageIcon,
   LayoutDashboardIcon,
@@ -128,6 +129,11 @@ const sidebar: sidebarCategoryType[] = [
         title: "Index page",
         href: "/",
         icon: <SquareChevronRightIcon />,
+      },
+      {
+        title: "shadcn UI",
+        href: "/shad",
+        icon: <CherryIcon />,
       },
       {
         title: "Audit log",
